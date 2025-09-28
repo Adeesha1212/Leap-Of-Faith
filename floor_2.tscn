@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyx4miqlo46om"]
+
+[ext_resource type="Texture2D" uid="uid://btybhddkmr2ig" path="res://2d-brick-wall-texture-assets-260nw-2127744527.png" id="1_xtp6k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bexhn"]
+size = Vector2(516.375, 36.5)
+
+[node name="Floor2" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(405.8125, 69)
+shape = SubResource("RectangleShape2D_bexhn")
+
+[node name="2dBrickWallTextureAssets260Nw2127744527" type="Sprite2D" parent="CollisionShape2D"]
+position = Vector2(1.25, 29)
+texture = ExtResource("1_xtp6k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527"]
+position = Vector2(39.9375, -74)
+shape = SubResource("RectangleShape2D_bexhn")
+
+[node name="2dBrickWallTextureAssets260Nw2127744527" type="Sprite2D" parent="CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D"]
+position = Vector2(1.25, 29)
+texture = ExtResource("1_xtp6k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527"]
+position = Vector2(39.9375, -74)
+shape = SubResource("RectangleShape2D_bexhn")
+
+[node name="2dBrickWallTextureAssets260Nw2127744527" type="Sprite2D" parent="CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D"]
+position = Vector2(1.25, 29)
+texture = ExtResource("1_xtp6k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527"]
+position = Vector2(39.9375, -74)
+shape = SubResource("RectangleShape2D_bexhn")
+
+[node name="2dBrickWallTextureAssets260Nw2127744527" type="Sprite2D" parent="CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D"]
+position = Vector2(1.25, 29)
+texture = ExtResource("1_xtp6k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527"]
+position = Vector2(39.9375, -74)
+shape = SubResource("RectangleShape2D_bexhn")
+
+[node name="2dBrickWallTextureAssets260Nw2127744527" type="Sprite2D" parent="CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D"]
+position = Vector2(1.25, 29)
+texture = ExtResource("1_xtp6k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527"]
+position = Vector2(39.9375, -74)
+shape = SubResource("RectangleShape2D_bexhn")
+
+[node name="2dBrickWallTextureAssets260Nw2127744527" type="Sprite2D" parent="CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D/2dBrickWallTextureAssets260Nw2127744527/CollisionShape2D"]
+position = Vector2(1.25, 29)
+texture = ExtResource("1_xtp6k")

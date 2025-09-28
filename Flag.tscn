@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://38e0fxhudmeb"]
+
+[ext_resource type="Texture2D" uid="uid://det7oq5mtqfa2" path="res://pngtree-golf-game-flag-abstract-vector-png-image_12177992-removebg-preview.png" id="1_oftpb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oftpb"]
+size = Vector2(20, 159)
+
+[node name="Node2D" type="Area2D"]
+position = Vector2(13, -2)
+
+[node name="PngtreeGolfGameFlagAbstractVectorPngImage12177992RemovebgPreview" type="Sprite2D" parent="."]
+position = Vector2(-3.5762787e-07, 70)
+scale = Vector2(0.31800005, 0.571)
+texture = ExtResource("1_oftpb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PngtreeGolfGameFlagAbstractVectorPngImage12177992RemovebgPreview"]
+position = Vector2(40.880493, -4.3782806)
+scale = Vector2(3.1446533, 1.7513134)
+shape = SubResource("RectangleShape2D_oftpb")
+
+[node name="Sprite2D" type="Sprite2D" parent="PngtreeGolfGameFlagAbstractVectorPngImage12177992RemovebgPreview/CollisionShape2D"]

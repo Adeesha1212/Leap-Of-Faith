@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cid20atfw34ku"]
+
+[ext_resource type="Texture2D" uid="uid://btybhddkmr2ig" path="res://2d-brick-wall-texture-assets-260nw-2127744527.png" id="1_oj3tl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bexhn"]
+size = Vector2(516.375, 36.5)
+
+[node name="Floor" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(267.75, 69)
+shape = SubResource("RectangleShape2D_bexhn")
+
+[node name="2dBrickWallTextureAssets260Nw2127744527" type="Sprite2D" parent="CollisionShape2D"]
+position = Vector2(1.25, 29)
+texture = ExtResource("1_oj3tl")

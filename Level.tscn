@@ -1,0 +1,120 @@
+[gd_scene load_steps=9 format=3 uid="uid://dndsx21ledpqf"]
+
+[ext_resource type="PackedScene" uid="uid://caipapo1t18q2" path="res://player.tscn" id="1_bexhn"]
+[ext_resource type="PackedScene" uid="uid://cid20atfw34ku" path="res://floor.tscn" id="2_t7iv1"]
+[ext_resource type="PackedScene" uid="uid://dt8naaigfe365" path="res://block.tscn" id="3_2nifc"]
+[ext_resource type="Texture2D" uid="uid://det7oq5mtqfa2" path="res://pngtree-golf-game-flag-abstract-vector-png-image_12177992-removebg-preview.png" id="5_m3clv"]
+[ext_resource type="Texture2D" uid="uid://btybhddkmr2ig" path="res://2d-brick-wall-texture-assets-260nw-2127744527.png" id="5_q4iis"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wkftn"]
+load_path = "res://.godot/imported/Blue.png-4446ab5618ad493b14bfb7508f619949.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m3clv"]
+size = Vector2(516.375, 36.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mxnmf"]
+size = Vector2(20, 159)
+
+[node name="Node2D" type="Node2D"]
+metadata/_edit_vertical_guides_ = [-52658.0]
+
+[node name="Blue2" type="Sprite2D" parent="."]
+position = Vector2(-1069, -653)
+scale = Vector2(331.21878, 183.87514)
+texture = SubResource("CompressedTexture2D_wkftn")
+
+[node name="Player" parent="." instance=ExtResource("1_bexhn")]
+position = Vector2(-872, -143)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(0, 6.1035156e-05)
+
+[node name="Floor6" parent="." instance=ExtResource("2_t7iv1")]
+position = Vector2(3000, 709)
+
+[node name="Floor2" parent="." instance=ExtResource("2_t7iv1")]
+position = Vector2(-414, 97.00003)
+
+[node name="Floor3" parent="Floor2" instance=ExtResource("2_t7iv1")]
+position = Vector2(949, -48.00003)
+
+[node name="Block" parent="Floor2/Floor3" instance=ExtResource("3_2nifc")]
+position = Vector2(-182, 171)
+
+[node name="Block" parent="Floor2/Floor3/Block" instance=ExtResource("3_2nifc")]
+position = Vector2(1798, -130)
+script = null
+
+[node name="Block2" parent="Floor2/Floor3/Block" instance=ExtResource("3_2nifc")]
+position = Vector2(-565, -313)
+
+[node name="Floor5" parent="." instance=ExtResource("2_t7iv1")]
+position = Vector2(836, -18)
+
+[node name="Floor5" parent="Floor5" instance=ExtResource("2_t7iv1")]
+position = Vector2(1428, 48)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Floor5"]
+position = Vector2(891, 60)
+shape = SubResource("RectangleShape2D_m3clv")
+
+[node name="2dBrickWallTextureAssets260Nw2127744527" type="Sprite2D" parent="Floor5/CollisionShape2D2"]
+position = Vector2(1.25, 29)
+texture = ExtResource("5_q4iis")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor5/CollisionShape2D2"]
+position = Vector2(41.1875, -45)
+shape = SubResource("RectangleShape2D_m3clv")
+
+[node name="2dBrickWallTextureAssets260Nw2127744527" type="Sprite2D" parent="Floor5/CollisionShape2D2/CollisionShape2D"]
+position = Vector2(1.25, 29)
+texture = ExtResource("5_q4iis")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor5/CollisionShape2D2/CollisionShape2D"]
+position = Vector2(41.1875, -45)
+shape = SubResource("RectangleShape2D_m3clv")
+
+[node name="2dBrickWallTextureAssets260Nw2127744527" type="Sprite2D" parent="Floor5/CollisionShape2D2/CollisionShape2D/CollisionShape2D"]
+position = Vector2(1.25, 29)
+texture = ExtResource("5_q4iis")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor5/CollisionShape2D2/CollisionShape2D/CollisionShape2D"]
+position = Vector2(41.1875, -45)
+shape = SubResource("RectangleShape2D_m3clv")
+
+[node name="2dBrickWallTextureAssets260Nw2127744527" type="Sprite2D" parent="Floor5/CollisionShape2D2/CollisionShape2D/CollisionShape2D/CollisionShape2D"]
+position = Vector2(1.25, 29)
+texture = ExtResource("5_q4iis")
+
+[node name="Node2D" type="Area2D" parent="."]
+position = Vector2(3531, 709)
+
+[node name="PngtreeGolfGameFlagAbstractVectorPngImage12177992RemovebgPreview" type="Sprite2D" parent="Node2D"]
+position = Vector2(-51.999992, -16.999992)
+scale = Vector2(0.31800005, 0.571)
+texture = ExtResource("5_m3clv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/PngtreeGolfGameFlagAbstractVectorPngImage12177992RemovebgPreview"]
+position = Vector2(1.1246157e-06, -0.8756561)
+scale = Vector2(3.1446533, 1.7513134)
+shape = SubResource("RectangleShape2D_mxnmf")
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/PngtreeGolfGameFlagAbstractVectorPngImage12177992RemovebgPreview/CollisionShape2D"]
+
+[node name="Floor7" parent="." instance=ExtResource("2_t7iv1")]
+position = Vector2(-908, -164)
+
+[node name="Floor7" parent="Floor7" instance=ExtResource("2_t7iv1")]
+position = Vector2(1974, -249)
+
+[node name="Block" parent="." instance=ExtResource("3_2nifc")]
+position = Vector2(981, -16)
+
+[node name="Floor8" parent="." instance=ExtResource("2_t7iv1")]
+position = Vector2(1597, -413)
+
+[node name="Floor7" parent="Floor8" instance=ExtResource("2_t7iv1")]
+position = Vector2(531, 95)
+
+[node name="Floor7" parent="Floor8/Floor7" instance=ExtResource("2_t7iv1")]
+position = Vector2(-2206, 0)
